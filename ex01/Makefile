@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
+#    By: iamongeo <iamongeo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/23 02:29:20 by iamongeo          #+#    #+#              #
-#    Updated: 2023/07/24 22:50:43 by iamongeo         ###   ########.fr        #
+#    Updated: 2023/07/25 19:03:42 by iamongeo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ CPPSTD	=	-std=c++98
 
 CPPFLGS	=	$(CPPSTD) -Wall -Werror -Wextra
 
-NAME	=	templateing_test
+NAME	=	templating_test
 
 .c.o:
 	c++ $(CPPFLGS) -o $< -c $@
