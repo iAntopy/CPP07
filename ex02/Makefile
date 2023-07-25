@@ -6,13 +6,15 @@
 #    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/23 02:29:20 by iamongeo          #+#    #+#              #
-#    Updated: 2023/07/24 22:50:43 by iamongeo         ###   ########.fr        #
+#    Updated: 2023/07/25 04:10:44 by marvin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS	=	main.cpp
 
-CLS		=	#NONE
+TMPL	=	Array.tpp
+
+CLS		= #NONE
 
 OBJS	=	$(SRCS:.cpp=.o) $(CLS:.cpp=.o)
 
@@ -20,7 +22,7 @@ CPPSTD	=	-std=c++98
 
 CPPFLGS	=	$(CPPSTD) -Wall -Werror -Wextra
 
-NAME	=	templateing_test
+NAME	=	templating_test
 
 .c.o:
 	c++ $(CPPFLGS) -o $< -c $@
