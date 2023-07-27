@@ -6,11 +6,32 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 22:59:22 by iamongeo          #+#    #+#             */
-/*   Updated: 2023/07/30 19:12:42 by marvin           ###   ########.fr       */
+/*   Updated: 2023/07/30 19:21:03 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "iter.hpp"
+
+/// Test class surving as other generic typename T object array the iter
+/// function can iterator over and operate on. The multiply operator 
+/// is implemented so that the print_square() function can multiply the 
+/// iterated Test elements and multiply each by itself.
+struct Test
+{
+	public:
+		int		x;
+		float	y;
+		double	z;
+
+		Test(int x, float y, double z): x(x), y(y), z(z) {}
+		Test	operator*(Test& other) {return (Test(x * other.x, y * other.y, z * other.z));}
+};
+
+std::ostream&	operator<<(std::ostream& o, const Test& t) {
+	std::cout << "Test(x: " << t.x << ", y: " << t.y << ", z: " << t.z << ")";
+	return (o);
+}
+
 
 int main()
 {

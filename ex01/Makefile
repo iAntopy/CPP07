@@ -14,13 +14,13 @@ SRCS	=	main.cpp
 
 CLS		=	#NONE
 
-OBJS	=	$(SRCS:.cpp=.o) $(CLS:.cpp=.o)
+OBJS	=	$(SRCS:.cpp=.o)# $(CLS:.cpp=.o)
 
 CPPSTD	=	-std=c++98
 
 CPPFLGS	=	$(CPPSTD) -Wall -Werror -Wextra
 
-NAME	=	templating_test
+NAME	=	templating_iter
 
 .c.o:
 	c++ $(CPPFLGS) -o $< -c $@
