@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 22:59:22 by iamongeo          #+#    #+#             */
-/*   Updated: 2023/07/30 19:04:39 by marvin           ###   ########.fr       */
+/*   Updated: 2023/07/30 19:12:42 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,13 @@ int main()
                             Test(42, -42.42f, -99999999999.999999999),
                             Test(-999, 0.000000000000000000123f, 0.01100)};
     
-    std::cout << "Printing int array" << std::endl;
+    std::cout << "Edge cases: " << std::endl;
+  //  std::cout << "Calling iter with NULL pointer array: " << std::endl;
+    //iter(NULL, 5, print_elem);// DOES NOT COMPILE
+    std::cout << "Calling iter with valid pointer array with length 0: " << std::endl;
+    iter(int_arr, 0, print_elem);
+
+    std::cout << std::endl << "Printing int array" << std::endl;
     iter(int_arr, 6, print_elem);
     std::cout << std::endl << "Printing float array" << std::endl;
     iter(float_arr, 9, print_elem);

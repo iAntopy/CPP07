@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 23:00:31 by iamongeo          #+#    #+#             */
-/*   Updated: 2023/07/30 19:01:52 by marvin           ###   ########.fr       */
+/*   Updated: 2023/07/30 19:11:39 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,10 @@
 template <typename T>
 void    iter(T* arr, size_t size, void (*func)(T))
 {
+//	if (!arr)
+//		throw std::invalid_argument("Error: Missing array address.");
+//	else if (!size)
+//		throw std::invalid_argument("Error: Array empty");
 	for (size_t i=0; i < size; ++i)
 		func(arr[i]);
 }
