@@ -15,6 +15,7 @@
 
 # include <iostream>
 # include <exception>
+# include <cstring>
 
 template <typename T> 
 class Array

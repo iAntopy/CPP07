@@ -41,6 +41,7 @@ int main()
 	arr3[2] = 2;
 	arr3[3] = 1;
 	
+	std::cout << std::endl << "Original and 2 copies able to be modified independantly because a deep copy is performed in Array copy constructor and Array copy operator." << std::endl;
 	std::cout << arr1 << std::endl;
 	std::cout << arr2 << std::endl;
 	std::cout << arr3 << std::endl;

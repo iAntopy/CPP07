@@ -6,11 +6,12 @@
 #    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/23 02:29:20 by iamongeo          #+#    #+#              #
-#    Updated: 2023/07/25 04:10:44 by marvin           ###   ########.fr        #
+#    Updated: 2023/07/30 18:50:56 by marvin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS	=	main.cpp
+#SRCS	=	Array_standard_tests.cpp
 
 TMPL	=	Array.tpp
 
