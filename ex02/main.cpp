@@ -71,7 +71,6 @@ int main()
 
 
 ///// Templating Tests
-
 	std::cout << std::endl << "Templating tests :" << std::endl;
 	
 	Array<double>		darr(3);
